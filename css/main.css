@@ -107,6 +107,7 @@ header .nav-list-item{
 
 .close{
     display: none;
+    
 }
 header .nav-list-item:hover a,
 header .nav-list-item a.active{
