@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/all.min.css">
-    <title>Ecommerce</title>
+    <title>Cara Ecommerce</title>
+    <link rel="apple-touch-icon" href="./images/logo.png">
 </head>
 <body>
     <header>
@@ -14,31 +15,36 @@
             <a href="#" class="logo">
                 <img src="./images/logo.png" alt="logo">
             </a>
-            <nav>
+            <nav class="nav">
                 <ul class="nav-list">
-                    <li class="nav-list-item">
-                        <a href="#" class="active">Home</a>
+                    <li class="close">
+                        &cross;
                     </li>
                     <li class="nav-list-item">
-                        <a href="#">Shop</a>
+                        <a href="#" class="active list-a">Home</a>
                     </li>
                     <li class="nav-list-item">
-                        <a href="#">Blog</a>
+                        <a class="list-a" href="./shop.html">Shop</a>
                     </li>
                     <li class="nav-list-item">
-                        <a href="#">About</a>
+                        <a class="list-a" href="./blog.html">Blog</a>
                     </li>
                     <li class="nav-list-item">
-                        <a href="#">Contact</a>
+                        <a class="list-a" href="./about.html">About</a>
                     </li>
                     <li class="nav-list-item">
-                        <a href="#">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </a>
+                        <a class="list-a" href="./contact.html">Contact</a>
                     </li>
                 </ul>
+                <div class="layout hide"></div>
             </nav>
+            
+            <a class="shopping-cart" href="#">
+                <div class="counter">0</div>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
             <div class="burger-icon">
+                
                 <i class="fa-solid fa-bars"></i>
             </div>
         </div>
@@ -49,7 +55,7 @@
         <h2>Super Value deals</h2>
         <h1>On all products</h1>
         <p>Save more with copons & up to 70% off!</p>
-        <button>Shop Now</button>
+        <button><a href="#featured-products">Shop Now</a></button>
     </section>
 
 
@@ -80,7 +86,7 @@
         </div>
     </section>
 
-    <section class="featured-products section-p1">
+    <section id="featured-products" class="featured-products section-p1">
         <h2>Featured Products</h2>
         <p>Summer Collection New Modern Design</p>
         <div class="products-list">
