@@ -57,7 +57,3 @@ payBtn.addEventListener('click', (e) => {
     })
 
 })
-
-
-// el.style.border = "2px solid red"
-

@@ -123,6 +123,9 @@
     width: 12.5rem;
     border-radius: 5px;
 }
+.checkout a{
+    color: white;
+}
 .checkout:hover,
 .payment-section .payment-coupon .apply-coupon:hover{
     background-color: rgb(5, 72, 22);
