@@ -18,3 +18,46 @@ nav.addEventListener('click', (e) => {
     }
 
 });
+
+const currentYear = new Date().getFullYear();
+const yearOptions = document.querySelector('.exp-year');
+const monthOptions = document.querySelector('.exp-month');
+for (i = currentYear; i <= (currentYear+ 15); i++) {
+    const option = document.createElement('option');
+    option.value = i;
+    option.innerText = i;
+    yearOptions.append(option);
+}
+for (i = 1; i <= 12; i++){
+    const option = document.createElement('option');
+    option.value = i;
+    option.innerText = i;
+    monthOptions.append(option);
+}
+
+const payBtn = document.querySelector('.pay-btn');
+const requiredList = document.querySelectorAll('.required');
+const validP = document.querySelector('.valid')
+    let count = 0;
+
+payBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    requiredList.forEach((el) => {
+        
+        el.addEventListener('change', (e)=>{
+            if (el.value != '') {
+            el.style.border = "1px solid rgb(118, 118, 118)";
+            count += 1;
+        }
+        })
+        if (el.value == '') {
+            el.style.border = "2px solid red";
+            validP.style.display = 'block';
+        }
+    })
+
+})
+
+
+// el.style.border = "2px solid red"
+
